@@ -22,6 +22,7 @@ module.exports = class Product {
       });
     });
   }
+  
 
   static fetchAll(cb) {
     const p = path.join(rootDir, "data", "products.json");
