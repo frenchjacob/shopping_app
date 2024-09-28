@@ -9,7 +9,7 @@ const errorController = require("./controllers/error")
 
 const app = express();
 
-app.set("view engine", "pug");
+app.set("view engine", "ejs");
 
 // Parse incoming request text
 app.use(bodyParser.urlencoded({ extended: false }));
