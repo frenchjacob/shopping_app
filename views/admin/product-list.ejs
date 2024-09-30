@@ -28,11 +28,21 @@
                                 </div>
                                 <div class="card__actions">
                                     <a href="/admin/edit-product/<%= product.id %>?edit=true" class="btn">Edit</a>
+
                                     <form action="/admin/delete-product" method="POST">
+                                        <input type = "hidden" value="<%= product.id %>" name="productId">
+                                        <input type = "hidden" value="<%= product.title %>" name="title">
+                                        <input type = "hidden" value="<%= product.description %>" name="description">
+                                        <input type = "hidden" value="<%= product.price %>" name="price">
+                                        <input type = "hidden" value="<%= product.id %>" name="imageUrl">
                                         <button class="btn" type="submit">Delete</button>
+                                        
                                     </form>
 
                                 </div>
+
+
+
                             </article>
                             <% } %>
                     </div>
